@@ -1,4 +1,4 @@
-const FileDB = require('../models/filestore.js');
+const File = require('../models/filestore.js');
 
 const uploadPage = (req, res) => {
   res.render('upload');
