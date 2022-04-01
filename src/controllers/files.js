@@ -9,8 +9,11 @@ const uploadFile = (req, res) => {
 };
 
 const retrieveFile = (req, res) => {
+  
 };
 
-module.exports.uploadPage = uploadPage;
-module.exports.uploadFile = uploadFile;
-module.exports.retrieveFile = retrieveFile;
+module.exports = {
+  uploadPage,
+  uploadFile,
+  retrieveFile
+}

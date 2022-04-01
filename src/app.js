@@ -21,6 +21,9 @@ mongoose.connect(dbURL, (err) => {
 
 const app = express();
 app.use(compression());
+
+
+
 app.use('/assets', express.static(path.resolve(`${__dirname}/../hosted/`)));
 app.use(bodyParser.urlencoded({
   extended: true,
